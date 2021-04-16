@@ -10,6 +10,6 @@ app.get('/home',(req,res)=>{
 app.get('/profile',(req,res)=>{
     res.send("Welcome to your Profile")
 })
-app.listen(3000,()=>{
+app.listen( process.env.PORT || 3000,()=>{
     console.log("Server started at https://localhost:3000/home")
 })
